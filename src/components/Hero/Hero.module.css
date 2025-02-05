@@ -1,0 +1,84 @@
+/* Hero Section Styles */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), 
+                url('/images/farm-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 40px 20px;
+}
+
+/* Content Wrapper */
+.content {
+    max-width: 800px;
+}
+
+/* Headline */
+.headline {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+/* Subheadline */
+.subheadline {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #f4f4f4;
+}
+
+/* Description */
+.description {
+    font-size: 18px;
+    font-weight: 400;
+    color: #ddd;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+/* CTA Button */
+.cta {
+    display: inline-block;
+    background: linear-gradient(90deg, #ff9800, #ff7300);
+    color: white;
+    padding: 16px 32px;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 20px rgba(255, 152, 0, 0.4);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .headline {
+        font-size: 36px;
+    }
+
+    .subheadline {
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .cta {
+        font-size: 18px;
+        padding: 12px 24px;
+    }
+}
