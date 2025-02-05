@@ -1,12 +1,14 @@
 import React from "react";
 import ComingSoon from "./components/ComingSoon/ComingSoon";
-import HomegrownSection from "./components/HomegrownSection";
+import Homegrown from "./components/Homegrown/HomeGrown";
 
 const App: React.FC = () => {
   return (
     <>
       <ComingSoon />
       <HomegrownSection />
+      <Homegrown title="Locally Grown Goodness" description="Discover"
+
     </>
   );
 };
