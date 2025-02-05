@@ -1,0 +1,62 @@
+.homegrownContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f7f7; /* Light gray background */
+    padding: 80px 20px;
+    text-align: center;
+    border-radius: 12px;
+  }
+  
+  .homegrownTitle {
+    font-size: 36px;
+    font-weight: 700;
+    color: #2C2C2C;
+    margin-bottom: 15px;
+  }
+  
+  .homegrownSubtitle {
+    font-size: 18px;
+    font-weight: 400;
+    color: #555;
+    max-width: 600px;
+    margin-bottom: 25px;
+  }
+  
+  .homegrownCta {
+    background-color: #4C956C; /* Brand accent color */
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .homegrownCta:hover {
+    background-color: #3b7c57; /* Darker hover effect */
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .homegrownContainer {
+      padding: 50px 15px;
+    }
+  
+    .homegrownTitle {
+      font-size: 28px;
+    }
+  
+    .homegrownSubtitle {
+      font-size: 16px;
+    }
+  
+    .homegrownCta {
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+  }
+  
