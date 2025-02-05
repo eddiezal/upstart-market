@@ -1,0 +1,98 @@
+/* Container with animated background */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(-45deg, #4c956c, #2c3e50, #1e3a5f);
+    background-size: 300% 300%;
+    animation: bgShift 10s infinite alternate ease-in-out;
+    color: white;
+    text-align: center;
+  }
+  
+  @keyframes bgShift {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+  }
+  
+  /* Glassmorphism Content Box */
+  .contentBox {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2),
+                0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .contentBox:hover {
+    transform: scale(1.02);
+    box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.25),
+                0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Input Field Enhancements */
+  .inputField {
+    width: 100%;
+    max-width: 320px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .inputField:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+    transform: scale(1.02);
+  }
+  
+  /* Call-to-Action Button Enhancements */
+  .submitButton {
+    background: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(76, 175, 80, 0.3);
+  }
+  
+  .submitButton:hover {
+    background: #3a8c40;
+    box-shadow: 0px 6px 15px rgba(76, 175, 80, 0.5);
+    transform: translateY(-2px);
+  }
+  
+  /* Floating CTA Button for Mobile */
+  .floatingCta {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ff9800;
+    color: white;
+    padding: 14px 18px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(255, 152, 0, 0.4);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .floatingCta:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(255, 152, 0, 0.6);
+  }
+  
