@@ -28,7 +28,8 @@ const ComingSoon: React.FC = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={styles.comingSoon}>
+
       {/* Parallax Background */}
       <motion.div
         className={styles.parallaxBg}

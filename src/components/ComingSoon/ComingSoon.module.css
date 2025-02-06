@@ -4,13 +4,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100vw;  /* ✅ Allow full viewport width */
+    max-width: none;  /* ✅ Ensure it’s not restricted */
     height: 100vh;
     background: linear-gradient(-45deg, #4c956c, #2c3e50, #1e3a5f);
     background-size: 300% 300%;
     animation: bgShift 10s infinite alternate ease-in-out;
     color: white;
     text-align: center;
-  }
+}
+
   
   @keyframes bgShift {
     0% { background-position: 0% 50%; }
@@ -95,4 +98,13 @@
     transform: scale(1.1);
     box-shadow: 0 6px 15px rgba(255, 152, 0, 0.6);
   }
+
+  .comingSoon {
+    width: 100vw; /* ✅ Ensures full width */
+    max-width: none;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
   
