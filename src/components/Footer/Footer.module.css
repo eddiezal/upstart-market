@@ -1,0 +1,65 @@
+/* Footer Container */
+.footer {
+    background: linear-gradient(to right, #333, #222);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 3px solid #ff9800;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+/* Branding */
+.brand h2 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.brand p {
+    font-size: 14px;
+    color: #bbb;
+}
+
+/* Navigation Links */
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: opacity 0.3s ease;
+}
+
+.links a:hover {
+    opacity: 0.7;
+}
+
+/* Social Media */
+.social a {
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.social a:hover {
+    transform: scale(1.1);
+}
+
+/* Bottom Copyright */
+.bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #bbb;
+}

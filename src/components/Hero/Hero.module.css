@@ -4,7 +4,10 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 100vh;
+    width: 100vw;
+    max-width: none; /* ✅ Prevents it from stretching too far */
+    margin: 0 auto; /* ✅ Ensures centering */
+    height: 100%;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), 
                 url('/images/farm-background.jpg');
     background-size: cover;
@@ -81,4 +84,21 @@
         font-size: 18px;
         padding: 12px 24px;
     }
+}
+
+/* ✅ Full-width wrapper */
+.heroWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
 }

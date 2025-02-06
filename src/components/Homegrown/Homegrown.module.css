@@ -2,7 +2,7 @@
 .homegrown-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;  /* ✅ Ensures all content is centered */
     justify-content: center;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('/images/farm-background.jpg');
     background-size: cover;
@@ -11,8 +11,11 @@
     padding: 100px 20px;
     text-align: center;
     border-radius: 12px;
-    max-width: 900px;
-    margin: auto;
+    max-width: none;  /* ✅ Ensures section does not stretch too wide */
+    width: 100vw;
+    margin: 0 auto;  /* ✅ Fully centers */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
   }
   
   /* Title with gradient text effect */
@@ -40,13 +43,13 @@
   
   .homegrown-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    max-width: 1000px;
+    max-width: 1000px;  /* ✅ Slightly reduce width to improve centering */
     width: 100%;
-    margin-top: 20px;
-    justify-content: center;
-  }
+    margin: 0 auto;  /* ✅ Centers the grid */
+    justify-content: center; /* ✅ Ensures all items are centered */
+}
   
   
   /* Individual Cards */
@@ -133,3 +136,57 @@
     }
   }
   
+ /* ✅ Fade-In Effect */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ✅ Section Styling */
+.homegrownContainer {
+    text-align: center;
+    padding: 100px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ✅ Grid for Cards */
+.homegrownGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+/* ✅ Homegrown Cards */
+.homegrownCard {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    transition: all 0.3s ease-out;
+}
+.homegrownCard:hover {
+    transform: translateY(-5px); /* ✅ Subtle lift effect on hover */
+}
+
+/* ✅ CTA Button */
+.homegrownCta {
+    margin-top: 30px;
+    padding: 15px 30px;
+    background: #ffa500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.homegrownCta:hover {
+    transform: scale(1.05);
+}
